@@ -1,0 +1,28 @@
+public class Array {
+    public static void main(String[] args) {
+        
+        int[] angka1 = {1, 2, 3, 4, 5};
+        int[] angka2 = {6, 7, 8, 9, 10};
+
+        System.out.println("Array 1");
+        for (int i = 0; i < angka1.length; i++) {
+            int hasil = angka1[i] & 1;
+            if (hasil == 1) {
+                System.out.println(angka1[i] + " - Ganjil");
+            } else {
+                System.out.println(angka1[i] + " - Genap");
+            }
+        }
+        
+        System.out.println();
+        System.out.println("Array 2");
+        for (int i = 0; i < angka2.length; i++) {
+            int hasil = angka2[i] & 1;
+            if (hasil == 1) {
+                System.out.println(angka2[i] + " - Ganjil");
+            } else {
+                System.out.println(angka2[i] + " - Genap");
+            }
+        }
+    }
+}
